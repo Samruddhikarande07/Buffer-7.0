@@ -94,3 +94,52 @@ GET  /hashes                 getAllHashes()
 
 To expose as real HTTP: wrap `ProvenanceAPI` methods in Spring Boot `@RestController`
 or Javalin route handlers. All logic is already implemented.
+## Interactive UI (Frontend)
+
+We have built a fully interactive web-based UI to visualize and interact with the ML Provenance system.
+
+### Features
+- Build ML pipeline graph dynamically
+- Visualize dependencies between datasets, models, tools, and products
+- Simulate poisoning and observe risk propagation
+- Query:
+  - Impacted nodes
+  - Ancestors
+  - Reachability
+  - Shortest path
+- Generate Merkle proofs
+- View performance benchmarks
+
+---
+
+### How to Run UI
+
+1. Open the file:
+
+
+2. Run it in any browser (Chrome recommended)
+
+---
+
+### UI + Backend Integration (Optional)
+The UI is designed to work independently (demo mode), but can be connected to backend APIs:
+
+- Connect to Java backend (`ProvenanceAPI.java`)
+- Replace mock logic with API calls:
+  - `/artifacts`
+  - `/edges`
+  - `/query/*`
+  - `/proof/*`
+
+---
+
+### Screenshots
+
+(Add screenshots here)
+
+---
+
+### Demo Video
+
+(Add Google Drive / YouTube link here)
+

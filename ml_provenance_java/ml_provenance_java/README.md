@@ -1,5 +1,5 @@
 # Robust Model Provenance Against Poisoning in ML Supply Chains
-**DSA Final Year Project — Java Implementation**
+**Java Implementation**
 
 ## Compile & Run
 
